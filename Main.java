@@ -16,5 +16,17 @@ public class Main {
 		}
 		
 		System.out.println(Arrays.toString(a));
+
+
+		//ANOTHER ALGORITHM
+		int[] a = {2,4,6,8,10};
+        for (int i = 0; i < a.length/2; i++){
+            int temp = 0;
+            temp = a[i];
+            a[i] = a[a.length - 1 - i];
+            a[a.length - 1 - i] = temp;
+        }
+
+        System.out.println(Arrays.toString(a));
 	}
 }	
